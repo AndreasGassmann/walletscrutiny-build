@@ -1,0 +1,16 @@
+name: Verify build
+
+on: push
+
+jobs:
+  verify_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cache node modules
+      - run: |
+          # make file runnable, might not be necessary
+          chmod +x "${GITHUB_WORKSPACE}/verify_build.sh"
+
+          # run script
+          "${GITHUB_WORKSPACE}/verify_build.sh"
