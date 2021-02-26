@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Cache node modules
-      - run: |
+        run: |
           # make file runnable, might not be necessary
           chmod +x "${GITHUB_WORKSPACE}/verify_build.sh"
 
