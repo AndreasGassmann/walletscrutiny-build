@@ -11,12 +11,6 @@ jobs:
       
       - name: Run verify script
         run: |
-          # print current directory
-          pwd
-          # List files in current directory
-          ls
-          # List files in repo
-          ls "${GITHUB_WORKSPACE}"
           # make file runnable, might not be necessary
           chmod +x "${GITHUB_WORKSPACE}/verify_build.sh"
 
