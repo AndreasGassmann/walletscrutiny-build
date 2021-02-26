@@ -10,4 +10,4 @@ git clone https://gitlab.com/walletscrutiny/walletScrutinyCom
 
 cd walletScrutinyCom
 
-./test.sh ./vault/3.5.0.apk
+./test.sh ../vault/3.5.0.apk
