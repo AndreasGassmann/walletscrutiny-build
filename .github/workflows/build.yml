@@ -7,8 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Cache node modules
+      - name: Run verify script
         run: |
+          pwd
+          ls
+          ls "${GITHUB_WORKSPACE}"
           # make file runnable, might not be necessary
           chmod +x "${GITHUB_WORKSPACE}/verify_build.sh"
 
