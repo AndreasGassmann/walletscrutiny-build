@@ -10,4 +10,5 @@ git clone https://gitlab.com/walletscrutiny/walletScrutinyCom
 
 cd walletScrutinyCom
 
+./test.sh ../vault-v3.6.1.apk
 ./test.sh ../vault-v3.6.2.apk
