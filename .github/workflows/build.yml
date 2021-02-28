@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Run verify script
         run: |
           # make file runnable, might not be necessary
@@ -22,3 +22,11 @@ jobs:
         with:
           name: files
           path: artifacts
+
+      - name: Check diff
+        run: |
+          # make file runnable, might not be necessary
+          chmod +x "${GITHUB_WORKSPACE}/check_diff.sh"
+
+          # run script
+          "${GITHUB_WORKSPACE}/check_diff.sh"
