@@ -16,3 +16,9 @@ jobs:
 
           # run script
           "${GITHUB_WORKSPACE}/verify_build.sh"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: files
+          path: artifacts
