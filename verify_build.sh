@@ -10,17 +10,17 @@ git clone https://gitlab.com/walletscrutiny/walletScrutinyCom
 
 cd walletScrutinyCom
 
-./test.sh ../vault-v3.6.2.apk
+./test.sh ../vault-v3.7.0-28519.apk
 
 echo 'Preparing artifacts...'
 
 # Generate artfacts
 mkdir artifacts
 
-diff --brief --recursive /tmp/fromPlay_it.airgap.vault_26847 /tmp/fromBuild_it.airgap.vault_26847 > artifacts/diff.txt
+diff --brief --recursive /tmp/fromPlay_it.airgap.vault_28519 /tmp/fromBuild_it.airgap.vault_28519 > artifacts/diff.txt
 
-cp -r /tmp/fromPlay_it.airgap.vault_26847 artifacts/fromPlayStore
-cp -r /tmp/fromBuild_it.airgap.vault_26847 artifacts/fromCIBuild
+cp -r /tmp/fromPlay_it.airgap.vault_28519 artifacts/fromPlayStore
+cp -r /tmp/fromBuild_it.airgap.vault_28519 artifacts/fromCIBuild
 
 echo 'Diff and files copied to "artifacts" folder'
 
